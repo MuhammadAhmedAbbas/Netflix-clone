@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+.main{
+    background-image: url('image_back.jpg');
+    height: 80vh;
+    width: auto;
+}
+.main nav{
+    padding: auto;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(166, 3, 3);
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    position: relative;
+    z-index: 10;
+}
+.main nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 3px;;
+}
+.main nav a:hover{
+    color: rgb(20, 70, 13);
+    cursor: pointer;
+}
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 81vh;
+    width: 100%;
+    opacity: 0.;
+    
+    background-color: rgba(0, 0, 0, 0.729);
+}
+.main nav button{
+    background-color: rgb(161, 9, 9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     position: relative;
+    z-index: 10;
+}
+.main nav button:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.main div1{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+     position: relative;
+    z-index: 10;
+}
+
+.main div2{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 27px;
+     position: relative;
+    z-index: 10;
+}
+
+.main div3{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+     position: relative;
+    z-index: 10;
+}
+.main div4{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+     position: relative;
+    z-index: 10;
+}
+div4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 15px;
+    gap: 5px;
+    word-spacing: 5px;
+    }
+div4 button{
+    background-color: rgb(161, 9, 9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     position: relative;
+     font-size: medium;
+    z-index: 10;
+    padding: 20px;;
+}
+div4 button:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+div4 input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+     position: relative;
+    z-index: 10;
+    background-color: rgba(119, 136, 153, 0.451);
+    padding: 20px;
+    
+}
+.separator{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(103, 95, 95);
+    position: absolute;
+    top: 80vh;
+    left: 0;
+}
+
+.separator-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(103, 95, 95);
+    position: absolute;
+    top: 60vh;
+    left: 0;
+}
+section.first {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 100px;
+    gap: 100px;
+    
+}
+
+section.first .first-content {
+    width: 50%;
+    color: white;
+}
+
+section.first .video-container {
+    width: 20%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.first video {
+    width: 240px;   /* You can change this as needed */
+    height: 137px;
+    object-fit: cover;
+    max-width: 230%;
+    top: -3px;   /* Move down. Use negative for up */
+    border-radius:-5px ;
+   
+}
+section.first img{
+     width: 200%;
+    height: 250px; /* Maintain aspect ratio */
+    max-width: 200%;
+    top: px;   /* Move down. Use negative for up */
+    left: 10px;
+}
+.video-container {
+    position: relative;
+    width: 500px; /* adjust as needed */
+    height: 1000px;
+}
+
+.tv-image {
+    position: absolute;
+    display: block;
+    width: 90%;        /* Slightly bigger than .tv-video's 74% */
+    height: 67%;       /* Slightly bigger than .tv-video's 62% */
+    top: -3%;          /* Adjust so image remains centered behind video */
+    left: -3%;         /* Adjust position if needed */
+    z-index: 0;        /* Keep behind the video */
+}
+
+.tv-video {
+    position: absolute;
+    top: 0;     
+    left: 1;    
+    width: 20%;   
+    height: 0%;  
+    z-index: 10;
+    
+    object-fit: cover; 
+    box-shadow: rgb(138, 132, 132);
+}
+
+
+
+section.second {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 100px;
+    gap: 100px;
+    
+}
+
+section.second .first-content {
+    width: 50%;
+    color: white;
+}
+
+section.second .video-container {
+    width: 20%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.second video {
+    width: 115px;   /* You can change this as needed */
+    height: 94px;
+    object-fit: cover;
+    max-width: 120%;
+    top: 25px;   /* Move down. Use negative for up */
+    left: 1px;
+    border-top-left-radius: 10px;
+    box-shadow: rgb(231, 215, 215);
+}
+section.second img{
+     width: 160%;
+    height: 170px; /* Maintain aspect ratio */
+    max-width: 200%;
+    top: 10px;   /* Move down. Use negative for up */
+    left: 10px;}
+.video-container {
+    position: relative;
+    width: 500px; /* adjust as needed */
+    height: 140px;
+}
+
+.tv-image {
+    position: absolute;
+    display: block;
+    width: 90%;        /* Slightly bigger than .tv-video's 74% */
+    height: 67%;       /* Slightly bigger than .tv-video's 62% */
+    top: -3%;          /* Adjust so image remains centered behind video */
+    left: -3%;         /* Adjust position if needed */
+    z-index: 0;        /* Keep behind the video */
+}
+
+.tv-video {
+    position: absolute;
+    top: 0;     
+    left: 1;    
+    width: 20%;   
+    height: 0%;  
+    z-index: 10;
+  
+    object-fit: cover; 
+    box-shadow: rgb(138, 132, 132);
+}
+
+
+
+.third .first-content {
+    display: flex;               /* Row layout */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    color: white;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.third .first-content img {
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 5px rgb(186, 151, 151);
+}
+
+.third .text-content {
+    display: flex;              /* Column layout for text */
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+
+.fourth .first-content {
+    display: flex;               /* Row layout */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    color: white;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.fourth .first-content img {
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 5px rgba(23, 66, 50, 0.6);
+}
+
+.fourth .text-content {
+    display: flex;              /* Column layout for text */
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+    background-color: #544c4c42;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 500px; 
+}
+
+.btn1::after, .btn2::after, .btn3::after, .btn4::after, .btn5::after, .btn6::after {
+    content: "+";
+    position: absolute;
+    right: 10px; /* Distance from the right */
+    color: white;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover {
+    background-color: #4a4a4a;
+}
